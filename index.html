@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Reuniões</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Gerenciamento de Férias</a>
+        
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <div class="container mt-4">
+        <!-- Formulário -->
+        <form>
+            <div class="form-group">
+                <label for="meeting_title">Nome do solicitante:</label>
+                <input type="text" class="form-control" id="meeting_title" name="meeting_title" required>
+            </div>
+            <div class="form-group">
+                <label for="meeting_date">Data início das férias:</label>
+                <input type="date" class="form-control" id="meeting_date" name="meeting_date" required>
+            </div>
+            <div class="form-group">
+                <label for="meeting_date">Data fim das férias:</label>
+                <input type="date" class="form-control" id="meeting_date" name="meeting_date" required>
+            </div>
+            <div class="form-group">
+                <label for="attendees">E-mail:</label>
+                <textarea class="form-control" id="attendees" name="attendees" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Solicitar Férias</button>
+        </form>
+        <!-- Fim do Formulário -->
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        &copy; Gerenciamento de férias.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Incluir outros scripts, se necessário -->
+</body>
+</html>
